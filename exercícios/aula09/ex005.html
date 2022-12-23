@@ -19,7 +19,12 @@
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
     <div>Clique em mim</div>
     <script>
-        window.document.write(window.document.URL)
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        corpo.style.background = '#444444'
+        p1.style.color = 'blue'
+
+        window.alert(p1.innerHTML)
     </script>
 </body>
 </html>
