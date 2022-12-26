@@ -7,20 +7,31 @@
     <title>Desafio001</title>
 </head>
 <body>
-    <h1>Desafio001 Qual País você é?</h1>
-    <form action="cadastro.php">
-        <input type="text" name="txtpais" id="txtpais">
-        <label for=""></label>
+    <h1>Desafio001</h1>
+    <h2>Qual País você é?</h2>
+    <form>
+        <div>
+            <label for="txtpais">Nacionalidade:</label>
+            <input type="text" name="txtpais" id="txtpais" placeholder="Digite aqui...">
+            <input type="button" value="Verificar" onclick="ver()">
+            <input type="reset" value="Limpar">
+        </div>
+        <div id="res"></div>     
     </form>
 </body>
 <script>
-    var pais = 'Moçambique'
-console.log(`Vivendo em ${pais}`)
-if (pais != 'Brasil') {
-    console.log('Você é Estrangeiro!')
-}
-else {
-    console.log('Você é Brasileiro')
-}
+   function ver() {
+        var txtpais = window.document.querySelector('input#txtpais')
+        var res = window.document.querySelector('div#res')
+        var nac = (txtpais.value)
+        res.innerHTML = `<p>Vivendo em <strong>${nac}</strong></p>`
+        
+        if (nac != Brasil) {
+            res.innerHTML = `Você é estrangeiro`
+        }
+        else {
+            res.innerHTML = `Você é Brasileiro`
+        }
+   }
 </script>
 </html>
