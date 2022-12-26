@@ -1,1 +1,26 @@
-!
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio001</title>
+</head>
+<body>
+    <h1>Desafio001 Qual País você é?</h1>
+    <form action="cadastro.php">
+        <input type="text" name="txtpais" id="txtpais">
+        <label for=""></label>
+    </form>
+</body>
+<script>
+    var pais = 'Moçambique'
+console.log(`Vivendo em ${pais}`)
+if (pais != 'Brasil') {
+    console.log('Você é Estrangeiro!')
+}
+else {
+    console.log('Você é Brasileiro')
+}
+</script>
+</html>
