@@ -13,19 +13,14 @@
     </header>
     <section>
         <form>
-            <div>
-                <label for="txtinicio">Início: </label>
-                <input type="text" name="txtinicio" id="txtinicio"> <br>
-                <label for="txtfim">Fim: </label>
-                <input type="text" name="txtfim" id="txtfim"> <br>
-                <label for="txtpasso">Passo: </label>
-                <input type="text" name="txtpasso" id="txtpasso"> <br>
-            </div>
-            <div>
-                <input type="button" value="contar" onclick="contar()">
+            <div id="dados">
+                <p>Início: <input type="number" name="inicio" id="txti"></p>
+                <p>Fim: <input type="number" name="fim" id="txtf"></p>
+                <p>Passo <input type="number" name="passo" id="txtp"></p>
+                <p><input type="button" value="contar" onclick="contar()"></p>
             </div>
             <div id="res">
-                <p>Preparando a contagem...</p>
+                Preparando a contagem
             </div>
         </form>
     </section>
