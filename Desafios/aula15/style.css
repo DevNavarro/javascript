@@ -20,7 +20,8 @@ section {
 }
 
 img {
-    align-items: center;
+    display: block;
+    margin: auto;
 }
 
 footer {
