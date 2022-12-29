@@ -5,25 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabuada</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Linkar o CSS-->
 </head>
 <body>
     <header>
-        <h1>Tabuada</h1>
+        <h1>Tabuada</h1> <!-- Titulo no body-->
     </header>
     <section>
         <div>
-            <p>Número: <input type="number" name="num" id="txtn"></p>
-            <input type="button" value="Gerar Tabuada" onclick="tabuada()">
+            <p><label for="txtn">Número:</label> <input type="number" name="num" id="txtn"></p> <!--Label e Input-->
+            <input type="button" value="Gerar Tabuada" onclick="tabuada()"> <!--Botão "Gerar Tabuada" que executa a function tabuada() ao clicar-->
         </div>
         <div>
-            <select name="tabuada" id="seltab" size="10">
-                <option>Digite um número acima</option>
+            <select name="tabuada" id="seltab" size="10"> <!--Select para criar a caixa de escirça (size 10 já para mostrar os 10 calculos da tabuada)-->
+                <option>Digite um número acima</option> <!-- Começar já com uma opção (será apagada ao executar o script)-->
             </select>
         </div>
     </section>
     <footer>
-        <p>&copy; CursoemVideo</p>
+        <p>&copy; CursoemVideo</p> 
     </footer>
     <script src="script.js"></script>
 </body>
