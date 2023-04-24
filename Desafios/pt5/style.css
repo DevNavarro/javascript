@@ -25,6 +25,7 @@ div#esp {
 
 select {
     width: 200px;
+    margin: 20px 0px 20px 0px;
 }
 footer {
     color: #fff;
